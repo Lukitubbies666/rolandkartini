@@ -31,7 +31,7 @@ export default function Wish({
         getData()
     }, [])
     const getData = () => {
-        axios.get(`https://moexpress.herokuapp.com/api/posts`)
+        axios.get(`https://apirolandkartini.herokuapp.com/api/posts`)
             .then(data => {
                 setDoa(data.data)
             }).catch(err => {
@@ -53,7 +53,7 @@ export default function Wish({
             "doa": valueKirim.doa,
             "hadir": valueKirim.hadir
         }
-        axios.post(`https://moexpress.herokuapp.com/api/posts`, kirim)
+        axios.post(`https://apirolandkartini.herokuapp.com/api/posts`, kirim)
             .then(() => {
                 Swal.fire({
                     imageUrl: `https://cdn-icons-png.flaticon.com/512/3158/3158981.png`,
@@ -82,6 +82,55 @@ export default function Wish({
             })
         })
     }
+
+    const [copied, setCopied] = useState({
+        roland1: false,
+        rifki2: false,
+        kartini1: false,
+        kartini2: false,
+        alamat: false
+    })
+
+    const copyText = (e) => {
+        const rekeningRoland1 = '0322198491'
+        const rekeningRoland2 = 1255595715
+        const rekeningKartini1 = '039701031147503'
+        const rekeningKartini2 = 7151916327
+        const alamatRumah = "Perum. Mekarsari Permai II Blok B9 No. 10 RT 003 RW 009, Ds. Mekarsari, Kec. Tambun Selatan, Kode Pos 17510"
+
+        if (e === 'roland1') {
+            navigator.clipboard.writeText(rekeningRoland1)
+            setCopied({
+                ...copied,
+                roland1: true
+            })
+        }   else if (e === 'roland2') {
+            navigator.clipboard.writeText(rekeningRoland2)
+            setCopied({
+                ...copied,
+                roland2: true
+            })
+        }   else if (e === "kartini1") {
+            navigator.clipboard.writeText(rekeningKartini1)
+            setCopied({
+                ...copied,
+                kartini1: true
+            })
+        }   else if (e === "kartini2") {
+            navigator.clipboard.writeText(rekeningKartini2)
+            setCopied({
+                ...copied,
+                kartini2: true
+            }) 
+        }   else {
+            navigator.clipboard.writeText(alamatRumah)
+            setCopied({
+                ...copied,
+                alamat: true
+            })
+        }
+    }
+
     return (
         <>
             <div className={"bg-color-white bg-cover bg-bottom"}>
@@ -89,8 +138,150 @@ export default function Wish({
                 <div className={"flex justify-center items-center content-center md:-mt-10 mb-10"}>
                     <Image src={Bunga}/>
                 </div>
+
                 <div className={"flex justify-center items-center content-center"}>
-                    <h1 className={"md:text-6xl text-center  text-5xl md:mb-0 font-medium text-black leading-relaxed font-curs"}>&nbsp;Kirimkan
+                    <h1 className={"md:text-5xl text-center  text-4xl md:mb-0 font-medium text-black leading-relaxed font-curs"}>
+                        Kirim Hadiah</h1>
+                </div>
+
+                <div className={"container flex flex-wrap mx-auto pt-5 justify-center"}>
+                    <br/>
+
+                    <div className="shadow-lg text-center md:w-5/12 md:ml-20 mb-6 px-3 py-10">
+                        <p className={"text-base"}>BCA a/n Roland Romudo Nainggolan</p>
+                        <p className={"font-bold text-lg"}>0322198491</p>
+                        
+                        <button
+                            className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                            onClick={() => {
+                                copyText('roland1')
+                            }}
+                        >
+                            <p className={"flex"}>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z"/>
+                                    <path
+                                        d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+                                </svg>
+                                &nbsp;
+                                Copy Number
+                            </p>
+                        </button>
+                        <br/>
+                        <br/>
+
+                        <p className={"text-base"}>BNI a/n Roland Romudo Nainggolan</p>
+                        <p className={"font-bold text-lg"}>1255595715</p>
+                        
+                        <button
+                            className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                            onClick={() => {
+                                copyText('roland2')
+                            }}
+                        >
+                            <p className={"flex"}>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z"/>
+                                    <path
+                                        d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+                                </svg>
+                                &nbsp;
+                                Copy Number
+                            </p>
+                        </button>
+                    </div>
+
+                    <div className="shadow-lg text-center md:w-5/12 md:ml-20 mb-6 px-3 py-10">
+                        <p className={"text-base"}>BRI a/n Kartini Lidyawati</p>
+                        <p className={"font-bold text-lg"}>039701031147503</p>
+                        
+                        <button
+                            className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                            onClick={() => {
+                                copyText('kartini1')
+                            }}
+                        >
+                            <p className={"flex"}>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z"/>
+                                    <path
+                                        d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+                                </svg>
+                                &nbsp;
+                                Copy Number
+                            </p>
+                        </button>
+                        <br/>
+                        <br/>
+
+                        <p className={"text-base"}>BSI a/n Kartini Lidyawati</p>
+                        <p className={"font-bold text-lg"}>7151916327</p>
+                        
+                        <button
+                            className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                            onClick={() => {
+                                copyText('kartini2')
+                            }}
+                        >
+                            <p className={"flex"}>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z"/>
+                                    <path
+                                        d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+                                </svg>
+                                &nbsp;
+                                Copy Number
+                            </p>
+                        </button>
+                    </div>
+                </div>
+
+                <div className={"container flex flex-wrap mx-auto pt-5 justify-center"}>
+                    <br/>
+
+                    <div className="shadow-lg text-center md:w-3/12 md:ml-20 mb-6 px-3 py-10">
+                        <p className={"font-bold text-lg"}>Kirim Kado</p>
+                        <br/>
+                        <p className={"text-base"}>Perum. Mekarsari Permai II Blok B9 No. 10 RT 003 RW 009, Ds. Mekarsari, Kec. Tambun Selatan, Kode Pos 17510</p>
+                        
+                        <br/>
+                        <button
+                            className="bg-color-pallete-200 hover:bg-color-pallete-300 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0"
+                            onClick={() => {
+                                copyText('alamat')
+                            }}
+                        >
+                            <p className={"flex"}>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z"/>
+                                    <path
+                                        d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+                                </svg>
+                                &nbsp;
+                                Copy Number
+                            </p>
+                        </button>
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+
+                
+                            
+
+
+                <div className={"flex justify-center items-center content-center"}>
+                    <h1 className={"md:text-5xl text-center  text-4xl md:mb-0 font-medium text-black leading-relaxed font-curs"}>&nbsp;Kirimkan
                         Ucapan & Doa untuk kami&nbsp;</h1>
                 </div>
                 <div className={"flex justify-center items-center content-center"}>

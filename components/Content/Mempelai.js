@@ -4,6 +4,8 @@ import BungaKanan from '../../assets/leaves-right.png'
 import MaskTop from '../../assets/mask.png'
 import MaskBottom from '../../assets/mask_bottom.png'
 import Pengantin from "./Pengantin/Pengantin";
+import Slideshow from './Slideshow/Slideshow'
+import { SliderData } from './Slideshow/SliderData'
 import Waktu from "./Waktu";
 
 export default function Mempelai() {
@@ -36,6 +38,9 @@ export default function Mempelai() {
                     </div>
                     <Pengantin/>
                 </div>
+
+                <Slideshow slides={SliderData}/>
+
                 <div className={"flex md:-mb-2"}>
                     <Image src={MaskTop}/>
                 </div>
