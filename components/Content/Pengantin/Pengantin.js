@@ -105,11 +105,11 @@ export default function Pengantin() {
                     <div className={"flex items-center w-full justify-center"}>
                         <img
                             className={"rounded-full mr-10 w-[150px] h-[150px]"}
-                            src="https://i.imgur.com/OqMh5hN.png"
+                            src="https://i.imgur.com/Q8VmOhz.jpg"
                             alt=""/>
                         <img
                             className={"rounded-full bg-auto h-[150px] w-[150px]"}
-                            src="https://i.imgur.com/MS43Ppx.png"
+                            src="https://i.imgur.com/f99YTVL.jpg"
                             alt=""/>
                     </div>
                     <div className={'md:w-6/12 w-full '}>

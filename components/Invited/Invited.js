@@ -19,7 +19,7 @@ export default function Invited({changeInvited,nameGuest}) {
     }
     return (
         <>
-            <div className={"bg-invited min-h-screen bg-cover bg-bottom"}>
+            <div className={"bg-invited min-h-screen bg-cover bg-center"}>
                 <div className={"text-center" +
                 " opacity-100"}>
                     <div className={"md:py-10 object-left-top"}>
@@ -31,7 +31,7 @@ export default function Invited({changeInvited,nameGuest}) {
                     <br/>
                     <h1 className={"md:text-2xl text-xl font-medium text-blackContent leading-relaxed"}>- Save the date of our
                         wedding. -</h1>
-                    <p className={"text-blackContent"}>Sabtu, 4 Juni 2022</p>
+                    <p className={"text-blackContent font-bold"}>Sabtu, 4 Juni 2022</p>
                     <br/>
                     <input type="text"
                            placeholder="Daftar tamu..."

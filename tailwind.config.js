@@ -9,7 +9,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Poppins', 'sans-serif'],
+                sans: ['Radio Canada', 'sans-serif'],
                 brittany: ['Brittany Signature'],
                 mono: ['Great Vibes, cursive;'],
                 curs: ['Birthstone', "cursive"]
@@ -67,7 +67,7 @@ module.exports = {
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "invited": `url(/heronew.webp)`,
+                "invited": `url(/img_invited.jpg)`,
                 // "best-resolution": `url(/best_resolution1.png)`,
                 "footer": `url(/img_hero.jpg)`
             },

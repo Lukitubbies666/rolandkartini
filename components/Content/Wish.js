@@ -96,7 +96,7 @@ export default function Wish({
         const rekeningRoland2 = 1255595715
         const rekeningKartini1 = '039701031147503'
         const rekeningKartini2 = 7151916327
-        const alamatRumah = "Perum. Mekarsari Permai II Blok B9 No. 10 RT 003 RW 009, Ds. Mekarsari, Kec. Tambun Selatan, Kode Pos 17510"
+        const alamatRumah = "Jl. Rawasari Selatan No.30 RT.014 RW.009, Kel. Rawasari, Kec. Cempaka Putih, Jakarta Pusat, 10570"
 
         if (e === 'roland1') {
             navigator.clipboard.writeText(rekeningRoland1)
@@ -250,7 +250,7 @@ export default function Wish({
                     <div className="shadow-lg text-center md:w-3/12 md:ml-20 mb-6 px-3 py-10">
                         <p className={"font-bold text-lg"}>Kirim Kado</p>
                         <br/>
-                        <p className={"text-base"}>Perum. Mekarsari Permai II Blok B9 No. 10 RT 003 RW 009, Ds. Mekarsari, Kec. Tambun Selatan, Kode Pos 17510</p>
+                        <p className={"text-base"}>Jl. Rawasari Selatan No.30 RT.014 RW.009, Kel. Rawasari, Kec. Cempaka Putih, Jakarta Pusat, 10570</p>
                         
                         <br/>
                         <button

@@ -39,6 +39,11 @@ export default function Mempelai() {
                     <Pengantin/>
                 </div>
 
+
+                <h1 className={"md:text-6xl text-center  text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>Our Prewedding Photos
+                </h1>
+                <br/>
+
                 <Slideshow slides={SliderData}/>
 
                 <div className={"flex md:-mb-2"}>
