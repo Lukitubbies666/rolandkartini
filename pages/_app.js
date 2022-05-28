@@ -7,7 +7,7 @@ function MyApp({Component, pageProps}) {
           <Head>
               <link rel="preconnect" href="https://fonts.googleapis.com"/>
               <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+              <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap"
                     rel="stylesheet"/>
               <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
               <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet"/>

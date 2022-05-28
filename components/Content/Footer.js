@@ -2,7 +2,7 @@ import Image from 'next/dist/client/image'
 import MaskBottom from "../../assets/mask_bottom.png";
 import Instagram from '../../assets/instagram.png'
 
-export default function Footer({}) {
+export default function Footer() {
     return (
         <>
             <div className={"bg-footer bg-cover bg-no-repeat bg-center "}>

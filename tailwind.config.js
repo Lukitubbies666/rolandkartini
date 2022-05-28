@@ -69,7 +69,6 @@ module.exports = {
             backgroundImage: {
                 "invited": `url(/img_invited.jpg)`,
                 // "best-resolution": `url(/best_resolution1.png)`,
-                "footer": `url(/img_hero.jpg)`
             },
             boxShadow: {
                 'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
@@ -104,6 +103,9 @@ module.exports = {
             const utilities = {
                 ".bg-hero": {
                     "background-image": "url(/backgroundfooter.jpg)",
+                },
+                ".bg-footer": {
+                    "background-image": "url(/img_hero.jpg)",
                 }
             }
             addUtilities(utilities);
