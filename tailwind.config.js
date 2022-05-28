@@ -105,7 +105,7 @@ module.exports = {
                     "background-image": "url(/backgroundfooter.jpg)",
                 },
                 ".bg-footer": {
-                    "background-image": "url(/img_hero.jpg)",
+                    "background-image": "url(/backgroundfooter.jpg)",
                 }
             }
             addUtilities(utilities);
