@@ -25,13 +25,12 @@ export default function Invited({changeInvited,nameGuest}) {
                     <div className={"md:py-10 object-left-top"}>
                         <Image src={Bunga} width={512} height={282}/>
                     </div>
-                    <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-blackContent leading-relaxed font-curs"}>Hello,
-                        {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        You're Invited</h1>
+                    <h1 className={"md:text-6xl text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>Hello,
+                        You are Invited</h1>
                     <br/>
-                    <h1 className={"md:text-2xl text-xl font-medium text-blackContent leading-relaxed"}>- Save the date of our
+                    <h1 className={"md:text-2xl text-xl font-medium text-white leading-relaxed font-sans"}>- Save the date of our
                         wedding. -</h1>
-                    <p className={"text-blackContent font-bold"}>Sabtu, 4 Juni 2022</p>
+                    <p className={"text-white font-bold font-sans"}>Sabtu, 4 Juni 2022</p>
                     <br/>
                     <input type="text"
                            placeholder="Daftar tamu..."

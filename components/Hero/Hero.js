@@ -24,16 +24,16 @@ export default function Hero({guest}) {
                             className={"md:text-5xl text-4xl font-medium text-white leading-relaxed md:mt-12 mb-16 font-brittany"}>Roland
                             & Kartini</h1>
                     </animated.div>
-                    <p className={"text-white font-bold text-lg"}>Sabtu, 4 Juni 2022</p>
+                    <p className={"text-white font-bold text-lg font-sans"}>Sabtu, 4 Juni 2022</p>
                     {/*<Timer/>*/}
-                    <p className={"text-white"}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+                    <p className={"text-white font-sans"}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
                     <br/>
                     <div
                         className={"rounded-xl md:w-[600px] w-[300px] text-center justify-center bg-white mx-auto py-10 boxShadow group"}>
                         <h1 className={"text-3xl font-medium text-black leading-relaxed font-curs capitalize"}>{guest}</h1>
                     </div>
                     <br/>
-                    <p className={"text-white italic pb-10"}>*Bila ada kesalahan nama/gelar mohon dimaklumi</p>
+                    <p className={"text-white italic pb-10 font-sans"}>*Bila ada kesalahan nama/gelar mohon dimaklumi</p>
 
                 </div>
                 {/*</motion.div>*/}

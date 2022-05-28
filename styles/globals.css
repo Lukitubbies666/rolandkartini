@@ -11,6 +11,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bree Serif', serif;
+  src: url(../assets/fonts/BreeSerif-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
@@ -31,16 +38,20 @@ a {
 .slider {
   position: relative;
   padding-top: 10px;
-  height: 50%;
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.imagerr {
-  width: 30%;
-  height: 20%;
+.imager {
+  max-width: 428px;
+  max-height: 428px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right-arrow {

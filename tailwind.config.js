@@ -12,7 +12,8 @@ module.exports = {
                 sans: ['Radio Canada', 'sans-serif'],
                 brittany: ['Brittany Signature'],
                 mono: ['Great Vibes, cursive;'],
-                curs: ['Birthstone', "cursive"]
+                curs: ['Birthstone', "cursive"],
+                bree: ['Bree Serif', 'serif']
             },
             colors: {
                 "theme-blue": "#5515ef",
@@ -67,7 +68,7 @@ module.exports = {
                 "blackContent": "#222222"
             },
             backgroundImage: {
-                "invited": `url(/img_invited.jpg)`,
+                "invited": `url(/img_invited1.jpg)`,
                 // "best-resolution": `url(/best_resolution1.png)`,
             },
             boxShadow: {
@@ -102,10 +103,10 @@ module.exports = {
                          }) {
             const utilities = {
                 ".bg-hero": {
-                    "background-image": "url(/backgroundfooter.jpg)",
+                    "background-image": "url(/backgroundfooter1.jpg)",
                 },
                 ".bg-footer": {
-                    "background-image": "url(/backgroundfooter.jpg)",
+                    "background-image": "url(/backgroundbawah1.jpg)",
                 }
             }
             addUtilities(utilities);

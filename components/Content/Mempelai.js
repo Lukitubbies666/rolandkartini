@@ -21,7 +21,7 @@ export default function Mempelai() {
                     </div> */}
                     <p className={"text-white flex justify-center items-center text-center text-lg md:mx-40 mx-2 mb-6"}>&apos;Kiranya Engkau sekarang berkenan memberkati keluarga hamba-Mu ini, 
                     supaya tetap ada di hadapan-Mu untuk selama-lamanya. Sebab apa yang Engkau berkati, ya TUHAN, diberkati untuk selama-lamanya.&apos;</p>
-                    <p className={"text-white flex justify-center items-center text-center md:mx-40 mb-8 font-bold"}>
+                    <p className={"text-white flex justify-center items-center text-center md:mx-40 mb-8 font-bold font-sans"}>
                         (1 Tawarikh 17 : 27)
                     </p>
                     <div className={"flex justify-center items-center content-center"}>
@@ -32,7 +32,7 @@ export default function Mempelai() {
                     </div>
                     <br/>
                     <div className={"text-center px-10"}>
-                        <p className={"leading-relaxed  text-white"}>By the grace of God, we are pleased to announce our wedding to you 
+                        <p className={"leading-relaxed  text-white font-sans"}>By the grace of God, we are pleased to announce our wedding to you 
                         our family and friends:
                         </p>
                     </div>

@@ -27,7 +27,7 @@ export default function ProtokolKesehatan({}) {
                             hadirin
                             undangan dihimbau untuk memenuhi beberapa peraturan berikut:
                         </p>
-                        <div className={"flex flex-wrap mx-auto justify-center text-white w-full"}>
+                        <div className={"flex flex-wrap mx-auto justify-center text-white w-full font-sans"}>
                             <div className={"md:w-3/12 w-6/12 mb-10"}>
                                 <h4 className={"font-bold "}>Menjaga <br className={"md:hidden"}/> Jarak
                                 </h4>

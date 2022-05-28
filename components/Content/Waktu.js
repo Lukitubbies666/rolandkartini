@@ -96,8 +96,8 @@ export default function Waktu() {
                         <p>(Klik logo untuk terhubung ke lokasi)</p>
                         <br/>
                         
-                        <p className={"font-bold"}>Gereja HKBP Kayu Putih</p>
-                        <p className={"px-16"}>Jl. Pondasi No. 17, Kampung Ambon, RT.12/RW.2, Kayu Putih, 
+                        <p className={"font-bold font-sans"}>Gereja HKBP Kayu Putih</p>
+                        <p className={"px-16 font-sans"}>Jl. Pondasi No. 17, Kampung Ambon, RT.12/RW.2, Kayu Putih, 
                         Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 
                         13210, Indonesia</p>
                     </div>
@@ -121,8 +121,8 @@ export default function Waktu() {
                         <p>(Klik logo untuk terhubung ke lokasi)</p>
                         <br/>
 
-                        <p className={"font-bold"}>Grand Mangaradja</p>
-                        <p className={"px-16"}>Jalan Perintis Kemerdekaan 7, Kelapa Gading Timur, 
+                        <p className={"font-bold font-sans"}>Grand Mangaradja</p>
+                        <p className={"px-16 font-sans"}>Jalan Perintis Kemerdekaan 7, Kelapa Gading Timur, 
                         Kecamatan Kelapa Gading Kota Jakarta Utara</p>
                     </div>
                 </div>

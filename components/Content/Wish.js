@@ -144,7 +144,7 @@ export default function Wish({
                         Kirim Hadiah</h1>
                 </div>
 
-                <div className={"container flex flex-wrap mx-auto pt-5 justify-center"}>
+                <div className={"container flex flex-wrap mx-auto pt-5 justify-center font-sans"}>
                     <br/>
 
                     <div className="shadow-lg text-center md:w-5/12 md:ml-20 mb-6 px-3 py-10">
@@ -244,7 +244,7 @@ export default function Wish({
                     </div>
                 </div>
 
-                <div className={"container flex flex-wrap mx-auto pt-5 justify-center"}>
+                <div className={"container flex flex-wrap mx-auto pt-5 justify-center font-sans"}>
                     <br/>
 
                     <div className="shadow-lg text-center md:w-3/12 md:ml-20 mb-6 px-3 py-10">

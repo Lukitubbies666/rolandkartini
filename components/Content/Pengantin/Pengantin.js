@@ -32,7 +32,7 @@ export default function Pengantin() {
                             </a>
 
                         <br/>
-                        <p className={"text-white"}>
+                        <p className={"text-white font-sans"}>
                             Putra dari <br/><span className={"font-bold"}> Bapak S.M. Nainggolan dan Ibu M. Siagian
 
                     </span>
@@ -49,7 +49,7 @@ export default function Pengantin() {
                         <h1 className={"md:text-4xl text-3xl font-medium text-white leading-relaxed mt-5 font-brittany"}>-
                             Kartini
                             -</h1>
-                        <h1 className={"md:text-2xl text-xl font-medium text-white leading-relaxed mt-5"}>
+                        <h1 className={"md:text-2xl text-xl font-medium text-white leading-relaxed mt-5 font-sans"}>
                             Kartini Lidyawati Angelia Tinambunan, S.I.Kom.</h1>
 
                             <a href="https://www.instagram.com/ketawaketini/" target={"_blank"} rel="noreferrer">
@@ -105,11 +105,11 @@ export default function Pengantin() {
                     <div className={"flex items-center w-full justify-center"}>
                         <img
                             className={"rounded-full mr-10 w-[150px] h-[150px]"}
-                            src="https://i.imgur.com/Q8VmOhz.jpg"
+                            src="https://i.imgur.com/ozKl4ik.png"
                             alt=""/>
                         <img
                             className={"rounded-full bg-auto h-[150px] w-[150px]"}
-                            src="https://i.imgur.com/f99YTVL.jpg"
+                            src="https://i.imgur.com/RCmZEjZ.png"
                             alt=""/>
                     </div>
                     <div className={'md:w-6/12 w-full '}>

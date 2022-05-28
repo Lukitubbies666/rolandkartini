@@ -9,7 +9,7 @@ export default function Footer() {
                 <Image src={MaskBottom}/>
                 <div className={"container mx-auto pt-5 pb-20"}>
                     <div className={"flex justify-center items-center content-center"}>
-                        <p className={"text-center block md:mb-0 font-medium text-lg text-white leading-relaxed"}>With Love,</p>
+                        <p className={"text-center block md:mb-0 font-medium text-lg text-white leading-relaxed font-sans"}>With Love,</p>
                     </div>
                     <br/><br/>
 
